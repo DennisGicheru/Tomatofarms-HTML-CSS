@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <title>Make a Purchase</title>
+   <link rel="stylesheet" type="text/css" href="formstyle.css" media="screen">
+   <style type="text/css" media="all">
+    span {
+      width: 175px;
+      display:block;
+      float:left;
+    }
+    input {
+      float:left;
+    }
+    p {
+      padding-top:10px;
+      clear: all;
+    }
+    h2 {
+      padding-top:20px;
+      clear: all;
+    }
+    label {
+      padding-right:20px;
+    }
+  </style>
+</head>
+
+<header>
+    <hgroup>
+      <h1><a href="index.html">Tomato Farms Kenya</a></h1>  
+      <h1>Place Your Order</h1>
+    </hgroup>
+ </header>
+
+ <body>
+<form>
+    <form method="POST" action="form.aspx">
+        <h1>Enter your Details</h1>
+    <fieldset>
+        <p><label><span>Customer name: </span><input type="text" name="customerName" maxlength="20" required></label></p>
+
+        <p><label><span>Email: </span><input type= email name=emailInput required></label></p>
+    
+        <p><label><span>Telephone Number: </span><input type=tel name=telInput required></label> Use 07.... or  2547.....</label></p>    
+    </fieldset>
+
+    <h1>What would you like to purchase?</h1>
+        <h2>Fresh Tomatoes</h2>
+    
+    <fieldset>
+        <legend>Tomato varieties</legend>
+        <p><label> <input type="radio" name="variety" value="Marglobe" checked> Marglobe tomatoes (Ksh 145 per kg)
+    </label></p>
+     <p><label> <input type="radio" name="variety" value="Anna F1"> Anna F1 tomatoes (ksh 170 per kg)
+    </label></p>
+     <p><label> <input type="radio" name="variety" value="Mavuno F1"> Mavuno F1 tomatoes (ksh 190 per kg)
+    </label></p>
+    <p><label> <input type="radio" name="variety" value="Sweet Casaday"> Sweet Casaday tomatoes (ksh 220 per kg)
+    </label></p>
+    
+    <p><label><span>How many kilograms: </span><input type=number name=numberInput required aria-valuemax="100"></label>(value should be less than or equal to 100)</p>
+</fieldset>
+
+
+    <h2>Value added Products(VAP)</h2>
+
+    <fieldset>
+        <legend>Types available</legend>
+        <p><label> <input type="radio" name="value added products" Value="Tomato sauce"> Tomato sauce (ksh 200 per unit(kg))</label></p>
+        <p><label> <input type="radio" name="value added products" Value="Tomato paste" checked> Tomato Paste (ksh 400 per unit(kg))</label></p>
+        <p><label> <input type="radio" name="value added products" Value="Tomato puree"> Tomato puree (ksh 900 per unit(kg))</label></p>
+    
+        <p><label><span>No of units: </span><input type=number name=numberInput required aria-valuemax="25"></label>(value shouldn't exceed 25)</p>
+    
+      <p>VAP options 
+        <select name="options" multiple>
+           <option value="c1">plain</option>
+           <option value="c2" selected>Hot and chilli(+ 5% of price)</option>
+           <option value="c3">Spicy with Garlic(+ 10% of price)</option>
+        </select>
+        </p>
+
+    </fieldset>
+   
+    <h1>Delivery Information</h1>
+    <fieldset>
+        <p><label><span>Delivery options: </span>
+        <input type=text list=someList>
+        <datalist id=someList>
+        <option label=Collectionpoint value="Pick up station">
+        <option label=deliveredtoyourdoorstep value="Door Delivery">
+        </label></p>
+
+        <p><label><span> City or town: </span><input type=text required></label></p>
+        <p><label><span> County of Residence: </span><input type=text required>(should be in Kenya)</label></p>
+        <p><label><span> Home address(if available): </span><input type=text pattern="^\d{5}(-\d{5})?$"></label></p>
+        <p><label><span> Street/estate: </span><input type=text ></label></p>
+        <p><label><span>Home Telephone/landline: </span><input type=tel name=telInput ></label>
+        
+     </fieldset>
+         
+        <p><input type="submit" value="place another order"></p>
+
+        <p><button>Submit and proceed to checkout</button></p>
+</form>
+
+<footer>
+    <small>Copyright © 2020-2021 Tomato Farms Kenya</small>
+    
+    <br> <contact>Contact us on +254 712 345 678 or +254 787 654 321</contact> </br>
+    </footer>
+  
+  </body>
+  
+  </html>
+
+
+  
+
+ 
